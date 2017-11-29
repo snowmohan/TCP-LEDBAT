@@ -19,7 +19,7 @@
 #define LP_RESOL       1000
 
 #define  DEBUG_SLOW_START    0
-#define  DEBUG_DELAY         1
+#define  DEBUG_DELAY         0
 #define  DEBUG_OWD_HZ        0
 #define  DEBUG_NOISE_FILTER  0
 #define  DEBUG_BASE_HISTO    0
@@ -30,7 +30,7 @@ static int noise_filter_len = 4;
 static int target = 25;
 static int gain_num = 1;
 static int gain_den = 1;
-static int do_ss = 0;
+static int do_ss = 1;
 static int ledbat_ssthresh = 0xffff;
 
 module_param(base_histo_len, int, 0644);
