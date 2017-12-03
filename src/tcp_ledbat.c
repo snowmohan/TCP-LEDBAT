@@ -31,7 +31,7 @@ static int target = 100;
 static int gain_num = 1;
 static int gain_den = 1;
 static int do_ss = 2;
-static int ledbat_ssthresh = 0x11ff;
+static int ledbat_ssthresh = 0x00ff;
 
 module_param(base_histo_len, int, 0644);
 MODULE_PARM_DESC(base_histo_len, "length of the base history vector");
