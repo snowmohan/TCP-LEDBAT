@@ -18,7 +18,7 @@
 /* resolution of owd */
 #define LP_RESOL       1000
 
-#define  DEBUG_SLOW_START    1
+#define  DEBUG_SLOW_START    0
 #define  DEBUG_DELAY         0
 #define  DEBUG_OWD_HZ        0
 #define  DEBUG_NOISE_FILTER  0
