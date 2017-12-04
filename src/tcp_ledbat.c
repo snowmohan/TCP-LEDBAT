@@ -237,8 +237,10 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 		       tp->snd_cwnd_clamp, tp->snd_cwnd, tp->snd_ssthresh);
 #endif
 		acked = tcp_slow_start(tp, acked);
-		if (!acked)
-			return;
+		if (!acked){
+			printk(KERN_DEBUG
+		       "123");
+			return;}
 	} else {
 		ledbat->flag &= ~LEDBAT_CAN_SS;
 	}
