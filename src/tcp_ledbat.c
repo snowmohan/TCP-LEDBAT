@@ -250,6 +250,7 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 	base_delay = ((s64) ledbat_base_delay(ledbat));
 
 	queue_delay = current_delay - base_delay;
+	queue_delay = (queue_delay>(((s64) 1)<<39)))?queue_delay:(((s64) 1)<<39));
 	offset = ((s64) target) - (queue_delay);
 	/*printk(KERN_DEBUG
 	       "queue_delay %lld, offset %lld ",
