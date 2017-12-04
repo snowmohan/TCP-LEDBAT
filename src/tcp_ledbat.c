@@ -30,7 +30,7 @@ static int noise_filter_len = 4;
 static int target = 100;
 static int gain_num = 1;
 static int gain_den = 1;
-static int do_ss = 1;
+static int do_ss = 0;
 static int ledbat_ssthresh = 0xffff;
 
 module_param(base_histo_len, int, 0644);
@@ -237,10 +237,9 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 		       tp->snd_cwnd_clamp, tp->snd_cwnd, tp->snd_ssthresh);
 #endif
 		acked = tcp_slow_start(tp, acked);
-		if (!acked){
-			printk(KERN_DEBUG
-		       "123");
-			return;}
+		if (!acked)
+			
+			return;
 	} else {
 		ledbat->flag &= ~LEDBAT_CAN_SS;
 	}
