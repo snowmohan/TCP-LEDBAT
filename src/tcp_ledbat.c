@@ -259,7 +259,7 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 	offset = do_div(offset, gain_den);
 
 	/* Do not ramp more than TCP. */
-	if (offset > target)
+	if (offset > target | offset< -2^36)
 		offset = target;
 
 #if DEBUG_DELAY
