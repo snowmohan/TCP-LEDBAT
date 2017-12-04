@@ -252,8 +252,8 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 	queue_delay = current_delay - base_delay;
 	offset = ((s64) target) - (queue_delay);
 	printk(KERN_DEBUG
-	       "offset %lld ",
-	       offset);
+	       "queue_delay %lld, offset %lld ",
+	       queue_delay,offset);
 	
 	offset *= gain_num;
 	offset = do_div(offset, gain_den);
