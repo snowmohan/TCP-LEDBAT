@@ -7,4 +7,4 @@
 [Geni](https://portal.geni.net/secure/listresources.php?slice_id=19af4e4e-4e4e-4066-90b7-ae6d98a09c2e&am_id[]=347)  
 [Set latency using TC](http://bencane.com/2012/07/16/tc-adding-simulated-network-latency-to-your-linux-server/)  
 [M/M/1 Lab](http://witestlab.poly.edu/~ffund/el7353/2-testbed-mm1.html)  
-[debug](http://www.linuxidc.com/Linux/2011-05/36289.html)
+[debug](http://www.linuxidc.com/Linux/2011-05/36289.htm)
