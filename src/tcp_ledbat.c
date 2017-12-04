@@ -19,7 +19,7 @@
 #define LP_RESOL       1000
 
 #define  DEBUG_SLOW_START    0
-#define  DEBUG_DELAY         0
+#define  DEBUG_DELAY         1
 #define  DEBUG_OWD_HZ        0
 #define  DEBUG_NOISE_FILTER  0
 #define  DEBUG_BASE_HISTO    0
@@ -250,10 +250,6 @@ static void tcp_ledbat_cong_avoid(struct sock *sk, u32 ack, u32 acked)
 
 	queue_delay = current_delay - base_delay;
 	offset = ((s64) target) - (queue_delay);
-printk(KERN_DEBUG
-		       "target %d \n",
-		       target);
-	
 	
 	offset *= gain_num;
 	offset = do_div(offset, gain_den);
