@@ -16,7 +16,7 @@
 #include <linux/vmalloc.h>
 
 /* resolution of owd */
-#define LP_RESOL       10000
+#define LP_RESOL       1000
 
 #define  DEBUG_SLOW_START    0
 #define  DEBUG_DELAY         0
@@ -30,7 +30,7 @@ static int noise_filter_len = 4;//4
 static int target = 100;//20
 static int gain_num = 1;//1
 static int gain_den = 1;//100
-static int do_ss = 0;
+static int do_ss = 1;
 static int ledbat_ssthresh = 0xffff;
 
 module_param(base_histo_len, int, 0644);
