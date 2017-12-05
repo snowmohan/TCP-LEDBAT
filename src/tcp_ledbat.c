@@ -25,10 +25,10 @@
 #define  DEBUG_BASE_HISTO    0
 
 /* NOTE: len are the actual length - 1 */
-static int base_histo_len = 3;//10
-static int noise_filter_len = 1;//4
+static int base_histo_len = 7;//10
+static int noise_filter_len = 4;//4
 static int target = 15;//20
-static int gain_num = 90;//1
+static int gain_num = 251;//1
 static int gain_den = 100;//100
 static int do_ss = 1;
 static int ledbat_ssthresh = 0xffff;
