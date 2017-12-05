@@ -28,7 +28,7 @@
 static int base_histo_len = 10;
 static int noise_filter_len = 4;
 static int target = 100;
-static int gain_num = 100;
+static int gain_num = 10000;
 static int gain_den = 1;
 static int do_ss = 1;
 static int ledbat_ssthresh = 0xffff;
