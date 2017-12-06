@@ -25,8 +25,8 @@
 #define  DEBUG_BASE_HISTO    0
 
 /* NOTE: len are the actual length - 1 */
-static int base_histo_len = 10;//10
-static int noise_filter_len = 4;//4
+static int base_histo_len = 1;//10
+static int noise_filter_len = 1;//4
 static int target = 10;//20
 static int gain_num = 1;//1
 static int gain_den = 10;//100
