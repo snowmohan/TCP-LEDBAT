@@ -5,6 +5,6 @@ show timestamp
 set title "$1"
 set xlabel "time (seconds)"
 set ylabel "Congestion Window Size"
-plot "$1" using 1:7 title "snd_cwnd"
+plot "$1" using 1:37 title "snd_cwnd"
 
 EOF
